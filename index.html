@@ -4,114 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoleBeat Music - The Ultimate Desktop Player</title>
+    <title>MoleBeat Music - Modern Desktop Music Player</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap"
-        rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="background-glow"></div>
-
-    <nav class="navbar">
+    <nav>
         <div class="logo">
-            <div class="logo-icon-wrapper">
-                <i data-lucide="zap" class="logo-icon"></i>
-            </div>
+            <div class="logo-icon"><i data-lucide="music"></i></div>
             <span>MoleBeat</span>
         </div>
         <div class="nav-links">
             <a href="#features">Features</a>
-            <a href="https://github.com/topalemirfaruk/molebeatmusic" target="_blank" class="btn-github">
-                <i data-lucide="github" size="18"></i> GitHub
-            </a>
+            <a href="https://github.com/topalemirfaruk/molebeatmusic" class="github-link"><i data-lucide="github"></i> GitHub</a>
         </div>
     </nav>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <div class="badge">v1.1.0 Now Available</div>
-                <h1>Experience Music <br><span class="gradient-text">Without Limits</span></h1>
-                <p>A powerful, open-source desktop music player built for audiophiles who love their local library.
-                    Fast, beautiful, and completely yours.</p>
-
-                <div class="cta-group">
-                    <a href="#" style="pointer-events: none; opacity: 0.7;" class="btn-primary">
-                        <i data-lucide="download"></i> Coming Soon
-                    </a>
-                    <a href="https://github.com/topalemirfaruk/molebeatmusic" class="btn-secondary">
-                        View Source Code
-                    </a>
-                </div>
+    <header>
+        <div class="hero-content">
+            <div class="badge">v1.1.0 Now Available</div>
+            <h1>Your Music,<br>Reimagined.</h1>
+            <p>A sleek, modern, and powerful desktop music player for your local library. Built with Electron and React.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn primary" style="pointer-events: none; opacity: 0.7;">
+                    <i data-lucide="download"></i> Download for Linux
+                </a>
+                <a href="https://github.com/topalemirfaruk/molebeatmusic" class="btn secondary">
+                    <i data-lucide="code"></i> View Source
+                </a>
             </div>
-
+        </div>
+        <div class="hero-visual">
             <div class="visualizer-container">
-                <div class="visualizer-circle">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-                <div class="icon-center">
-                    <i data-lucide="music" size="48"></i>
-                </div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
-        </section>
+        </div>
+    </header>
 
-        <section id="features" class="features">
-            <div class="features-header">
-                <h2>Crafted for Performance</h2>
-                <p>Every detail designed to enhance your listening experience.</p>
-            </div>
-
-            <div class="grid">
+    <main>
+        <section id="features">
+            <h2>Why MoleBeat?</h2>
+            <div class="features-grid">
                 <div class="card">
-                    <div class="card-icon"><i data-lucide="hard-drive"></i></div>
-                    <h3>Local First</h3>
-                    <p>Your music stays on your device. No cloud dependencies, no buffering, just instant playback.</p>
+                    <div class="card-icon"><i data-lucide="disc"></i></div>
+                    <h3>Dynamic Albums</h3>
+                    <p>Automatically organizes your library by album and artist for a clean browsing experience.</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><i data-lucide="sliders"></i></div>
-                    <h3>Audio Control</h3>
-                    <p>Fine-tune your experience with playback speed control (0.5x - 2.0x) and global volume.</p>
+                    <h3>Professional EQ</h3>
+                    <p>10-band equalizer with built-in presets like Bass Boost, Rock, and Pop.</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><i data-lucide="palette"></i></div>
                     <h3>Theme Engine</h3>
-                    <p>Personalize your experience with 6 vibrant accent colors. Make it truly yours.</p>
+                    <p>Customize the look with 6 vibrant accent colors to match your style.</p>
                 </div>
                 <div class="card">
-                    <div class="card-icon"><i data-lucide="picture-in-picture-2"></i></div>
-                    <h3>Mini Player</h3>
-                    <p>Keep the music going with a compact, always-on-top player while you multitask.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon"><i data-lucide="folder-input"></i></div>
+                    <div class="card-icon"><i data-lucide="move"></i></div>
                     <h3>Drag & Drop</h3>
-                    <p>Adding music is as simple as dragging files onto the app. Supports batch adding.</p>
+                    <p>Simply drag your music files into the app to instantly add them to your library.</p>
                 </div>
                 <div class="card">
-                    <div class="card-icon"><i data-lucide="list-music"></i></div>
-                    <h3>Playlists</h3>
-                    <p>Organize your library into custom playlists for every mood and occasion.</p>
+                    <div class="card-icon"><i data-lucide="pip"></i></div>
+                    <h3>Mini Player</h3>
+                    <p>Keep your music on top with a compact, picture-in-picture mode.</p>
                 </div>
                 <div class="card">
                     <div class="card-icon"><i data-lucide="mic-2"></i></div>
                     <h3>Synced Lyrics</h3>
-                    <p>Sing along with synchronized lyrics that scroll automatically with the music.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon"><i data-lucide="zap"></i></div>
-                    <h3>Lightning Fast</h3>
-                    <p>Built with Electron and React for maximum performance and responsiveness.</p>
+                    <p>Sing along with synchronized lyrics support (LRC) for your favorite tracks.</p>
                 </div>
             </div>
         </section>
