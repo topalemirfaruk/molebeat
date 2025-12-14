@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoleBeat Music - The Future of Local Music</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="glass-nav">
+        <div class="logo">
+            <div class="logo-icon"><i data-lucide="music"></i></div>
+            <span>MoleBeat</span>
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#download">Download</a>
+            <a href="https://github.com/topalemirfaruk/molebeatmusic" target="_blank" class="github-btn">
+                <i data-lucide="github"></i> GitHub
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="badge-container">
+                <span class="version-badge">v1.1.0 Available Now</span>
+            </div>
+            <h1 class="hero-title">
+                Your Music.<br>
+                <span class="gradient-text">Reimagined.</span>
+            </h1>
+            <p class="hero-subtitle">
+                Experience your local music library like never before. 
+                Sleek design, powerful features, and complete control.
+            </p>
+            <div class="cta-group">
+                <a href="#" class="btn btn-primary disabled">
+                    <i data-lucide="download"></i> Download for Linux
+                </a>
+                <a href="https://github.com/topalemirfaruk/molebeatmusic" target="_blank" class="btn btn-secondary">
+                    <i data-lucide="code"></i> View Source
+                </a>
+            </div>
+        </div>
+
+        <!-- App Showcase (3D Tilt Effect) -->
+        <div class="app-showcase-container">
+            <div class="app-window glass-panel">
+                <div class="window-header">
+                    <div class="window-controls">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="window-title">MoleBeat Music</div>
+                </div>
+                <div class="window-content">
+                    <!-- Placeholder for App Screenshot -->
+                    <div class="app-placeholder">
+                        <div class="sidebar-mock"></div>
+                        <div class="main-mock">
+                            <div class="hero-mock"></div>
+                            <div class="grid-mock">
+                                <div class="card-mock"></div>
+                                <div class="card-mock"></div>
+                                <div class="card-mock"></div>
+                                <div class="card-mock"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-header">
+            <h2>Why MoleBeat?</h2>
+            <p>Designed for audiophiles who love simplicity.</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card glass-panel">
+                <div class="icon-box"><i data-lucide="disc"></i></div>
+                <h3>Dynamic Albums</h3>
+                <p>Smart grouping by artist and album keeps your library organized automatically.</p>
+            </div>
+            
+            <div class="feature-card glass-panel">
+                <div class="icon-box"><i data-lucide="sliders"></i></div>
+                <h3>Pro Equalizer</h3>
+                <p>10-band EQ with presets like Bass Boost, Rock, and Pop for the perfect sound.</p>
+            </div>
+            
+            <div class="feature-card glass-panel">
+                <div class="icon-box"><i data-lucide="palette"></i></div>
+                <h3>Theme Engine</h3>
+                <p>Personalize your experience with 6 vibrant accent colors and dark mode.</p>
+            </div>
+            
+            <div class="feature-card glass-panel">
+                <div class="icon-box"><i data-lucide="move"></i></div>
+                <h3>Drag & Drop</h3>
+                <p>Add music instantly by dragging files or folders directly into the app.</p>
+            </div>
+            
+            <div class="feature-card glass-panel">
+                <div class="icon-box"><i data-lucide="pip"></i></div>
+                <h3>Mini Player</h3>
+                <p>Keep the music playing in a compact, always-on-top window while you work.</p>
+            </div>
+            
+            <div class="feature-card glass-panel">
+                <div class="icon-box"><i data-lucide="mic-2"></i></div>
+                <h3>Synced Lyrics</h3>
+                <p>Sing along with real-time synchronized lyrics (LRC) support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>MoleBeat</h3>
+                <p>Open Source Desktop Music Player</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/topalemirfaruk/molebeatmusic">GitHub</a>
+                <a href="#">Issues</a>
+                <a href="#">License</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MoleBeat Team. Built with Electron & React.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
